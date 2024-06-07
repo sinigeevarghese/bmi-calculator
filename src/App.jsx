@@ -164,7 +164,7 @@ function App() {
   return (
    <>
    <div className='d-flex justify-content-center align-items-center border border-secondary rounded shadow' style={{width:'100%',height:'100vh'}}>
-     <div className='bg-light p-4 rounded' style={{width:'400px',backgroundImage: `url(" https://img.freepik.com/free-vector/abstract-medical-wallpaper-template-design_53876-61802.jpg")`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'right'}}> 
+     <div className='bg-light p-4 rounded' style={{width:'400px',backgroundImage: `url("https://i.pinimg.com/originals/f8/da/46/f8da465672f14eb3595bd8828ecd0432.jpg")`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'right'}}> 
        
     
        
@@ -172,8 +172,8 @@ function App() {
         
         <form className='mt-4 'style={{padding:'50px',height:"500px"}} >
           <div className='mb-3 ' >
-          <h2 className='d-flex justify-content-center align-items-center mb-2 text-primary' >Body Mass Index</h2>
-          <h4 className='mt-3 mb-5 d-flex justify-content-center align-items-center'>{heading}</h4>
+          <h2 className='d-flex justify-content-center align-items-center mb-2 text-light' >Body Mass Index</h2>
+          <h4 className='mt-3 mb-5 d-flex justify-content-center align-items-center text-danger'>{heading}</h4>
           <TextField id="outlined-basic" value={weight || ""} name='weight' label="Enter your Weight " variant="outlined" className='w-100 mt-1' onChange={(e)=>Validate(e)}/> 
            {!isWeight &&<p className='text-danger'>*invalid input</p>} 
           </div>
